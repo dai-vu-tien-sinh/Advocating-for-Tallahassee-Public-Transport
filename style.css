@@ -1,0 +1,25 @@
+:root{--ink:#16262d;--paper:#f6f8f7;--panel:#e8efee;--teal:#0b7a82;--gold:#e9a900;--muted:#4d6068;--line:#c5d2d0;
+--head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--body:"Newsreader",Georgia,"Times New Roman",serif}
+@media (prefers-color-scheme:dark){:root{--ink:#e8f0ef;--paper:#0f1c21;--panel:#172a31;--teal:#4cc3cb;--gold:#f2bf2e;--muted:#a3b7bc;--line:#2b434b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.15rem/1.7 var(--body)}
+a{color:var(--teal)}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--gold);color:#16262d;padding:.5rem 1rem;z-index:20}
+nav{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:3px solid var(--ink)}
+nav ul{display:flex;gap:.25rem;list-style:none;margin:0 auto;padding:.5rem 1rem;max-width:68rem;overflow-x:auto}
+nav a{font:500 .95rem var(--head);color:var(--ink);text-decoration:none;padding:.4rem .8rem;border-radius:2rem;white-space:nowrap;display:block}
+nav a:hover{background:var(--panel)}
+nav a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+h1,h2{font-family:var(--head);line-height:1.1;margin:0 0 1.25rem;letter-spacing:-.015em}
+h1{font-size:clamp(2rem,5vw,3.2rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:500;color:var(--muted)}
+.hero{background:var(--ink);color:var(--paper);padding:4rem 0 3.5rem;border-bottom:8px solid var(--gold)}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem)}
+.hero p{font:500 1.3rem/1.5 var(--head);margin:0;max-width:40rem}
+main{padding:3rem 0 4rem}
+main p{margin:0 0 1.2rem}
+.lead{border-left:6px solid var(--gold);padding-left:1rem}
+ol.refs{padding-left:1.2rem}ol.refs li{margin-bottom:1rem;overflow-wrap:anywhere}
+hr{border:0;border-top:1px solid var(--line);margin:3rem 0}
