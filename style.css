@@ -46,7 +46,7 @@ a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .hero-detail { max-width: 42rem; color: #e3e5e9; font: 1.1rem/1.6 var(--body); }
 .hero .lead { color: var(--paper); }
 .lead { border-left: 5px solid var(--gold); padding-left: 1rem; }
-.page-section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 6rem; }
+.page-section { padding: clamp(3rem, 7vw, 5.5rem) 0; border-bottom: 1px solid var(--line); }
 .page-section:nth-child(even) { background: color-mix(in srgb, var(--panel) 34%, var(--paper)); }
 .page-section h2 { margin: 0 0 1.25rem; font: 700 clamp(1.8rem, 5vw, 2.7rem)/1.1 var(--head); letter-spacing: -.02em; }
 .section-kicker { margin: 0 0 .65rem; }
