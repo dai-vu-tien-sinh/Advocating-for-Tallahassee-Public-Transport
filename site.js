@@ -64,12 +64,9 @@
 
   const revealItems = document.querySelectorAll(".scroll-section .wrap > *");
   document.documentElement.classList.add("has-scroll-effects");
-  const observer = new IntersectionObserver((entries, currentObserver) => {
+  const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        currentObserver.unobserve(entry.target);
-      }
+      entry.target.classList.toggle("is-visible", entry.isIntersecting);
     }
   }, { threshold: 0.08, rootMargin: "0px 0px -24px 0px" });
 
